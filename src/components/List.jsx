@@ -13,11 +13,16 @@ const List = () => {
     },[])
     return (
         <div className="list_box">
+            <div className="title">
+                <p>Id</p>
+                <p>Name</p>
+                <p>Desc</p>
+            </div>
             {data.map((el)=>(
                 <div key={el.id} className="flex_row">
-                    <p>{el.id}</p>
-                    <p>{el.name}</p>
-                    <p>{el.description}</p>
+                    <p className="text">{el.id}</p>
+                    <p className="text">{el.name}</p>
+                    <p className="text">{el.description}</p>
                 </div>
             ))}
         </div>
